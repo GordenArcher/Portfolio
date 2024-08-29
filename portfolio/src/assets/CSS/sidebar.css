@@ -1,0 +1,180 @@
+.sidenav, .side_nav, .head, .person, .image_socials,
+.main_person, .person_socials, .social_links, .side_links,
+.links ul li .nav{
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar{
+    width: 350px;
+    height: 100vh;
+    border-right: 2px solid rgb(96, 96, 96);
+    position: fixed;
+}
+
+.side_nav{
+    padding: 20px 0;
+    position: relative;
+}
+
+.image_socials{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.engineerrrr{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: auto;
+}
+
+.engineerrrr img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.social_links {
+    display: inline-flex;
+    list-style: none;
+    width: 100%;
+    padding-top: 20px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+.social_links .icon {
+    position: relative;
+    background: transparent;
+    border-radius: 50%;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all .4s ease
+}
+
+.icon:hover{
+    transform: translateY(-6px);
+    border: none;
+}
+  
+.social_links .tooltip {
+    position: absolute;
+    width: 70px;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(98, 98, 98, 0.187);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.social_links .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.social_links .icon:hover .tooltip {
+    padding: 10px;
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    font-size: 1rem;
+}
+  
+.social_links .icon:hover span,
+.social_links .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+  
+.social_links .lin:hover,
+.social_links .lin:hover .tooltip,
+.social_links .lin:hover .tooltip::before {
+    background: hsl(214, 89%, 52%);
+    color: hsl(0, 0%, 100%);
+}
+  
+.social_links .x:hover,
+.social_links .x:hover .tooltip,
+.social_links .x:hover .tooltip::before {
+    background: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+  
+.social_links .in:hover,
+.social_links .in:hover .tooltip,
+.social_links .in:hover .tooltip::before {
+    background: hsl(349, 75%, 57%);
+    color: hsl(0, 0%, 100%);
+}
+  
+.social_links .wat:hover,
+.social_links .wat:hover .tooltip,
+.social_links .wat:hover .tooltip::before {
+    background: hsl(120, 100%, 25%);
+    color: hsl(0, 0%, 100%);
+}
+  
+.social_links .git:hover,
+.social_links .git:hover .tooltip,
+.social_links .git:hover .tooltip::before {
+    background: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+
+.side_links{
+    margin-top: 50px;
+}
+
+.links ul{
+    list-style: none;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links ul li{
+    padding: 10px;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+.links ul li a{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+}
+
+.links ul li .nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links ul li:hover{
+    background: #353535;
+}

@@ -1,22 +1,33 @@
-import { useState } from 'react'
+import About from '../pages/about'
+import Contact from '../pages/contact'
+import Home from '../pages/home'
 import './App.css'
+import Sidebar from './Sidebar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
+    <div className="portfolio">
+      <div className="portfolio_app">
+        <div className="side_bar">
+          <Sidebar />
+        </div>
+        
+        <div className="main_content">
+          <div className="routes">
+          <Router>
+            <Routes>
+              <Route path='/' element={ <Home /> } />
+              <Route path='/about' element={ <About /> } />
+              <Route path='/contact' element={ <Contact /> } />
+            </Routes>
+          </Router>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    </div>
     </>
   )
 }
