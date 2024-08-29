@@ -6,10 +6,7 @@
 }
 
 .sidebar{
-    width: 350px;
-    height: 100vh;
-    border-right: 2px solid rgb(96, 96, 96);
-    position: fixed;
+
 }
 
 .side_nav{
