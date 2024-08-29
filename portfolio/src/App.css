@@ -1,4 +1,4 @@
-.portfolio, .portfolio_app, .main_content, .routes{
+.portfolio, .portfolio_app, .routes{
     width: 100%;
     height: 100%;
     position: relative;
@@ -13,8 +13,4 @@
 
 .main_content{
     margin-left: 350px;
-}
-
-.routes{
-    padding: 20px;
 }

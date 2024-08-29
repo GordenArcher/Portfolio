@@ -1,6 +1,8 @@
+
 import './assets/CSS/sidebar.css'
 import Avatar from './assets/images/avatar.jpeg'
 const Sidebar = () => {
+
   return (
     <div>
       <div className="sidebar">
@@ -86,12 +88,13 @@ const Sidebar = () => {
               <div className="side_links">
                 <div className="links">
                   <ul>
+
                     <li>
                       <a href="/">
                         <div className="nav">
                           <div className="nav_icon">
                             <p>
-                              <i className='bi bi-house'></i>
+                              <i className='bi bi-house-fill'></i>
                             </p>
                           </div>
                           <div className="nav_name">
@@ -102,12 +105,13 @@ const Sidebar = () => {
                         </div>
                       </a>
                     </li>
+
                     <li>
                       <a href="/about">
                         <div className="nav">
                           <div className="nav_icon">
                             <p>
-                              <i className='bi bi-person'></i>
+                              <i className='bi bi-person-fill'></i>
                             </p>
                           </div>
                           <div className="nav_name">
@@ -118,12 +122,13 @@ const Sidebar = () => {
                         </div>
                       </a>
                     </li>
+
                     <li>
                       <a href="/resume">
                         <div className="nav">
                           <div className="nav_icon">
                             <p>
-                            <i className="bi bi-file-earmark-richtext"></i>
+                            <i className="bi bi-file-earmark-richtext-fill"></i>
                             </p>
                           </div>
                           <div className="nav_name">
@@ -134,12 +139,13 @@ const Sidebar = () => {
                         </div>
                       </a>
                     </li>
+
                     <li>
                       <a href="/portfolio">
                         <div className="nav">
                           <div className="nav_icon">
                             <p>
-                              <i className='bi bi-image'></i>
+                              <i className='bi bi-images'></i>
                             </p>
                           </div>
                           <div className="nav_name">
@@ -150,12 +156,13 @@ const Sidebar = () => {
                         </div>
                       </a>
                     </li>
+
                     <li>
                       <a href="/services">
                         <div className="nav">
                           <div className="nav_icon">
                             <p>
-                            <i className="bi bi-hdd-stack"></i>
+                            <i className="bi bi-hdd-stack-fill"></i>
                             </p>
                           </div>
                           <div className="nav_name">
@@ -166,12 +173,13 @@ const Sidebar = () => {
                         </div>
                       </a>
                     </li>
+
                     <li>
                       <a href="contact">
                         <div className="nav">
                           <div className="nav_icon">
                             <p>
-                              <i className='bi bi-envelope'></i>
+                              <i className='bi bi-envelope-fill'></i>
                             </p>
                           </div>
                           <div className="nav_name">
@@ -182,7 +190,9 @@ const Sidebar = () => {
                         </div>
                       </a>
                     </li>
+                    
                   </ul>
+
                 </div>
               </div>
             </div>
