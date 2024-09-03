@@ -1,0 +1,89 @@
+.portfolio_wrapper, .portfolio_page, .portfol_header, .main_portworks, .portfolio,
+.port_padd, .port_main, .por_projects, .projects_grid, .projects, .project_content,
+.project_content, .proj_img, .project_context, .frame_work, .proj_foot{
+    width: 100%;
+    height: 100%;
+}
+
+.portfol_header, .project_content, .project_content, .frame_work{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.port_header, .port_head_main{
+    font-size: 2rem;
+    color: hsl(240, 62%, 72%);
+}
+
+.header_line{
+    width: 60px;
+    height: 3px;
+    background: #fff;
+}
+
+.main_portworks{
+    margin-top: 80px;
+}
+
+.por_projects{
+    margin-top: 40px;
+}
+
+.projects_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.projects{
+    border: 1px solid #cccc;
+    border-radius: 4px;
+    
+}
+
+.project_content{
+    width: 90%;
+    margin:20px auto;
+}
+
+/* .proj_img{
+    width: 90%;
+    margin:20px auto 0;
+} */
+
+.proj_img img{
+    width: 100%;
+    height: 130px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.proj_foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.proj_view, .proj_lan_used{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.proj_view i{
+    color: hsl(240, 62%, 72%);
+    font-size: 1.1rem;
+}
+
+.lang_dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.jj{
+    background: hsl(60, 100%, 50%);
+}

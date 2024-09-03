@@ -1,7 +1,17 @@
 
+// import { useState } from 'react'
+import { useState } from 'react'
 import './assets/CSS/sidebar.css'
 import Avatar from './assets/images/avatar.jpeg'
 const Sidebar = () => {
+
+  const [iconFill, setIconFill] = useState(Array(6).fill(false));
+
+  const linkIcon = (index) => {
+    const updatedIconFill = [...iconFill];
+    updatedIconFill[index] = !updatedIconFill[index];
+    setIconFill(updatedIconFill);
+  };
 
   return (
     <div>
@@ -88,111 +98,79 @@ const Sidebar = () => {
               <div className="side_links">
                 <div className="links">
                   <ul>
-
-                    <li>
+                    <li onMouseEnter={() => linkIcon(0)} onMouseLeave={() => linkIcon(0)}>
                       <a href="/">
                         <div className="nav">
                           <div className="nav_icon">
-                            <p>
-                              <i className='bi bi-house-fill'></i>
-                            </p>
+                            <p><i className={`bi bi-house${iconFill[0] ? '-fill' : ''}`}></i></p>
                           </div>
                           <div className="nav_name">
-                            <div className="go_too">
-                              <span>Home</span>
-                            </div>
+                            <div className="go_too"><span>Home</span></div>
                           </div>
                         </div>
                       </a>
                     </li>
-
-                    <li>
+                    <li onMouseEnter={() => linkIcon(1)} onMouseLeave={() => linkIcon(1)}>
                       <a href="/about">
                         <div className="nav">
                           <div className="nav_icon">
-                            <p>
-                              <i className='bi bi-person-fill'></i>
-                            </p>
+                            <p><i className={`bi bi-person${iconFill[1] ? '-fill' : ''}`}></i></p>
                           </div>
                           <div className="nav_name">
-                            <div className="go_too">
-                              <span>About</span>
-                            </div>
+                            <div className="go_too"><span>About</span></div>
                           </div>
                         </div>
                       </a>
                     </li>
-
-                    <li>
+                    <li onMouseEnter={() => linkIcon(2)} onMouseLeave={() => linkIcon(2)}>
                       <a href="/resume">
                         <div className="nav">
                           <div className="nav_icon">
-                            <p>
-                            <i className="bi bi-file-earmark-richtext-fill"></i>
-                            </p>
+                            <p><i className={`bi bi-file-earmark-richtext${iconFill[2] ? '-fill' : ''}`}></i></p>
                           </div>
                           <div className="nav_name">
-                            <div className="go_too">
-                              <span>Resume</span>
-                            </div>
+                            <div className="go_too"><span>Resume</span></div>
                           </div>
                         </div>
                       </a>
                     </li>
-
-                    <li>
+                    <li onMouseEnter={() => linkIcon(3)} onMouseLeave={() => linkIcon(3)}>
                       <a href="/portfolio">
                         <div className="nav">
                           <div className="nav_icon">
-                            <p>
-                              <i className='bi bi-images'></i>
-                            </p>
+                            <p><i className={`bi bi-image${iconFill[3] ? '-fill' : ''}`}></i></p>
                           </div>
                           <div className="nav_name">
-                            <div className="go_too">
-                              <span>Portfolio</span>
-                            </div>
+                            <div className="go_too"><span>Portfolio</span></div>
                           </div>
                         </div>
                       </a>
                     </li>
-
-                    <li>
+                    <li onMouseEnter={() => linkIcon(4)} onMouseLeave={() => linkIcon(4)}>
                       <a href="/services">
                         <div className="nav">
                           <div className="nav_icon">
-                            <p>
-                            <i className="bi bi-hdd-stack-fill"></i>
-                            </p>
+                            <p><i className={`bi bi-hdd-stack${iconFill[4] ? '-fill' : ''}`}></i></p>
                           </div>
                           <div className="nav_name">
-                            <div className="go_too">
-                              <span>Services</span>
-                            </div>
+                            <div className="go_too"><span>Services</span></div>
                           </div>
                         </div>
                       </a>
                     </li>
-
-                    <li>
-                      <a href="contact">
+                    <li onMouseEnter={() => linkIcon(5)} onMouseLeave={() => linkIcon(5)}>
+                      <a href="/contact">
                         <div className="nav">
                           <div className="nav_icon">
-                            <p>
-                              <i className='bi bi-envelope-fill'></i>
-                            </p>
+                            <p><i className={`bi bi-envelope${iconFill[5] ? '-fill' : ''}`}></i></p>
                           </div>
                           <div className="nav_name">
-                            <div className="go_too">
-                              <span>Contact</span>
-                            </div>
+                            <div className="go_too"><span>Contact</span></div>
                           </div>
                         </div>
                       </a>
                     </li>
-                    
                   </ul>
-
                 </div>
               </div>
             </div>

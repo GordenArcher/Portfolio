@@ -1,7 +1,9 @@
 
 const Contact = () => {
   return (
-    <div>contact</div>
+    <div>
+ertfyguhijkolp[;]
+    </div>
   )
 }
 
