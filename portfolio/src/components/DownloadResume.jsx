@@ -1,10 +1,10 @@
 const DownloadResume = () => {
   return (
-    <div>
+    <button>
         <a href='/resume.pdf' download>
-            <i className='bi bi-download'></i>  Download Resume
+           Download Resume <i className='bi bi-download'></i>
         </a>
-    </div>
+    </button>
   )
 }
 

@@ -1,17 +1,72 @@
-.portfolio, .portfolio_app, .routes{
+.portfolio, .portfolio_app, .head_nav, .main_content, .routes{
     width: 100%;
     height: 100%;
-    position: relative;
 }
 
-.side_bar{
-    width: 350px;
-    height: 100vh;
-    border-right: 2px solid rgb(96, 96, 96);
-    position: fixed;
+.portfolio_app{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    padding-bottom: 30px;
 }
 
-.main_content{
-    margin-left: 350px;
+.head_nav{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: hsl(0, 0%, 0%);
+}
+
+.kick-start{
+    background: hsl(240, 5%, 7%);
+    border-radius: 13px;
     padding: 20px;
+}
+
+.talk{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.high{
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.letal, .footer{
+    margin-top: 30px;
+}
+
+.letal button{
+    background: hsl(240, 62%, 72%);
+    color: hsl(0, 0%, 100%);
+    height: 45px;
+    transition: .3s ease;
+}
+
+.letal a{
+    color: hsl(0, 0%, 100%);
+}
+
+.letal button:hover{
+    background: transparent;
+    border: 1px solid hsl(240, 62%, 72%);
+}
+
+.footer footer{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a{
+    color: hsl(240, 62%, 72%);
 }
