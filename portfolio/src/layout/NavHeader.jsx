@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import '../assets/CSS/sidebar.css'
+import { Link } from 'react-router-dom';
 
-const NavHeader = () => {
+const NavHeader = ( ) => {
 
     const [iconFill, setIconFill] = useState(Array(6).fill(false));
 
@@ -18,14 +19,14 @@ const NavHeader = () => {
                 <div className="head_links">
                     <div className="logo">
                         <div className="jlog">
-                            <a href="/"> G-KANAD </a>
+                            <Link to='/'>G-KANAD</Link>
                         </div>
                     </div>
 
                     <div className="links">
                         <ul>
                             <li onMouseEnter={() => linkIcon(0)} onMouseLeave={() => linkIcon(0)}>
-                                <a href="/">
+                                <Link to='/'>
                                     <div className="nav">
                                         <div className="nav_icon">
                                             <p><i className={`bi bi-house${iconFill[0] ? '-fill' : ''}`}></i></p>
@@ -34,11 +35,11 @@ const NavHeader = () => {
                                             <div className="go_too"><span>Home</span></div>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </li>
 
                             <li onMouseEnter={() => linkIcon(1)} onMouseLeave={() => linkIcon(1)}>
-                                <a href="/about">
+                                <Link to='/about'>
                                     <div className="nav">
                                         <div className="nav_icon">
                                             <p><i className={`bi bi-person${iconFill[1] ? '-fill' : ''}`}></i></p>
@@ -47,11 +48,11 @@ const NavHeader = () => {
                                             <div className="go_too"><span>About</span></div>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </li>
 
                             <li onMouseEnter={() => linkIcon(4)} onMouseLeave={() => linkIcon(4)}>
-                                <a href="/services">
+                                <Link to='/services'>
                                     <div className="nav">
                                         <div className="nav_icon">
                                             <p><i className={`bi bi-hdd-stack${iconFill[4] ? '-fill' : ''}`}></i></p>
@@ -60,11 +61,11 @@ const NavHeader = () => {
                                             <div className="go_too"><span>Services</span></div>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </li>
 
                             <li onMouseEnter={() => linkIcon(3)} onMouseLeave={() => linkIcon(3)}>
-                                <a href="/portfolio">
+                                <Link to='/portfolio'>
                                     <div className="nav">
                                         <div className="nav_icon">
                                             <p><i className={`bi bi-image${iconFill[3] ? '-fill' : ''}`}></i></p>
@@ -73,11 +74,11 @@ const NavHeader = () => {
                                             <div className="go_too"><span>Portfolio</span></div>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </li>
 
                             <li onMouseEnter={() => linkIcon(5)} onMouseLeave={() => linkIcon(5)}>
-                                <a href="/contact">
+                                <Link to='/contact'>
                                     <div className="nav">
                                         <div className="nav_icon">
                                             <p><i className={`bi bi-envelope${iconFill[5] ? '-fill' : ''}`}></i></p>
@@ -86,16 +87,16 @@ const NavHeader = () => {
                                             <div className="go_too"><span>Contact</span></div>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
 
                     <div className="hire-me">
                         <button>
-                            <a href="/service">
+                            <Link to='/service'>
                                 Hire me
-                            </a>
+                            </Link>
                         </button>
                     </div>
                 </div>

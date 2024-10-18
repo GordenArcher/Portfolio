@@ -1,300 +1,136 @@
+import { useState, useEffect, useMemo } from 'react'
 import '../assets/CSS/about.css'
-import Dev from '../assets/images/img.png'
+import DevImg from '../assets/images/img.png'
+import { Link } from 'react-router-dom'
+import { Experience } from '../layout/Experience'
 
 const About = () => {
+
+  const Languages = [
+    "UI/UX Design",
+    "Responsive Design",
+    "JavaScript",
+    "React",
+    "Django",
+    "Postgres",
+    "MongoDB",
+    "Team Collaboration and Fast Learner"
+    // {
+    //   a : "UI/UX Design"
+    // },
+    // {
+    //   b : "React"
+    // },
+    // {
+    //   c : "Django"
+    // },
+    // {
+    //   d : "Postgres"
+    // },
+    // {
+    //   e : "MongoDB"
+    // }
+  ]
+
+  const roles = useMemo(() => ["Software Developer.", "Fullstack Engineer.", "Frontend Developer.", "Backend Developer."])
+  const [index, setIndex] = useState(0); 
+  const [subIndex, setSubIndex] = useState(0);  
+  const [isDeleting, setIsDeleting] = useState(false);  
+  const [speed, setSpeed] = useState(350); 
+
+  useEffect(() => {
+    const handleTyping = () => {
+      if (!isDeleting && subIndex < roles[index].length) {
+        setSubIndex(subIndex + 1);
+      } else if (isDeleting && subIndex > 0) {
+        setSubIndex(subIndex - 1);
+      } else if (!isDeleting && subIndex === roles[index].length) {
+        setTimeout(() => setIsDeleting(true), 1000);
+      } else if (isDeleting && subIndex === 0) {
+        setIsDeleting(false);
+        setIndex((prevIndex) => (prevIndex + 1) % roles.length);
+      }
+
+      setSpeed(isDeleting ? 100 : 150);
+    };
+
+    const timeout = setTimeout(handleTyping, speed);
+
+    return () => clearTimeout(timeout);
+  }, [subIndex, isDeleting, index, speed, roles]);
+
+
   return (
     <div>
-        <div className="about_page">
-          <div className="about_wrapper">
-            <div className="about_header">
-              <div className="about_loud">
-                <h1>About</h1>
-              </div>
-            </div>
-            <div className="about_descript">
-              <div className="developer__">
-                <div className="develp_desc">
-                  <span>
-                    Full-Stack Developer skilled in React, Django, and database management. Experienced in building dynamic interfaces and robust backend systems, with a focus on scalable, maintainable solutions. Passionate about continuous learning and staying current with industry trends.
-                  </span>
+      <div className="about-section">
+        <div className="about-wrapper">
+        <div className="home">
+          <div className="see_dev">
+            <div className="m-pme">
+              <div className="dev__">
+                <div className="dev_image">
+                  <img src={DevImg} alt="developer image" />
                 </div>
               </div>
             </div>
 
-            <div className="about_what">
-              <div className="dev_info">
-                <div className="devvv">
-                  <div className="dev_image">
-                    <div className="image">
-                      <img src={Dev} alt="developer image" />
+            <div className="dev_wat">
+              <div className="iam">
+                <div className="bout-me">
+                  <div className="waht_dev_do">
+                    <div className="about_do">
+                      <span>I&apos;m a</span>
+                      <span>Gorden Archer</span>
+                      <span className="animated-role">
+                        {roles[index].substring(0, subIndex)}
+                      </span>
                     </div>
-                  </div>
 
-                  <div className="dev_info_what">
-                    <div className="dev_what_infom">
-                      <div>
-                        <div className="langua_do">
-                          <h4>Fullstack Web Developer</h4>
-                        </div>
+                    <div style={{display : 'flex', flexDirection :'column', gap : '10px', fontSize: '1.2rem'}}>
+                      <div className="labot">
+                        <span>
+                          I am an Accra-based fullstack engineer with a focus on web development, software engineering, and user interface design. My expertise spans a diverse range of technologies, and I&apos;ve worked across various industries to deliver both frontend and backend solutions.
+                        </span>
                       </div>
 
-                      <div className="info_about_dev">
-                        <div className="lis">
-                          <div className="left_side">
-                            <div className="info_dev_">
-                              <div className="info__icon">
-                                <div className="i">
-                                  <i className="bi bi-arrow-right-circle"></i>
-                                </div>
-                              </div>
-
-                              <div className="info__descc">
-                                <div className="desssss">
-                                  <p>Birthday:</p>
-                                </div>
-                              </div>
-
-                              <div className="info__main">
-                                <div className="inff_mainnnn_tess">
-                                  <p>14/05/2004</p>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div className="info_dev_">
-                              <div className="info__icon">
-                                <div className="i">
-                                  <i className="bi bi-arrow-right-circle"></i>
-                                </div>
-                              </div>
-
-                              <div className="info__descc">
-                                <div className="desssss">
-                                  <p>Social:</p>
-                                </div>
-                              </div>
-
-                              <div className="info__main">
-                                <div className="inff_mainnnn_tess">
-                                  <p><a href="http://instagram.com/iam_offence_sk" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div className="info_dev_">
-                              <div className="info__icon">
-                                <div className="i">
-                                  <i className="bi bi-arrow-right-circle"></i>
-                                </div>
-                              </div>
-
-                              <div className="info__descc">
-                                <div className="desssss">
-                                  <p>City:</p>
-                                </div>
-                              </div>
-
-                              <div className="info__main">
-                                <div className="inff_mainnnn_tess">
-                                  <p>Accra, Ghana</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="right_side">
-
-                            <div className="info_dev_">
-                              <div className="info__icon">
-                                <div className="i">
-                                  <i className="bi bi-arrow-right-circle"></i>
-                                </div>
-                              </div>
-
-                              <div className="info__descc">
-                                <div className="desssss">
-                                  <p>Degree:</p>
-                                </div>
-                              </div>
-
-                              <div className="info__main">
-                                <div className="inff_mainnnn_tess">
-                                  <p>Bachelor</p>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div className="info_dev_">
-                              <div className="info__icon">
-                                <div className="i">
-                                  <i className="bi bi-arrow-right-circle"></i>
-                                </div>
-                              </div>
-
-                              <div className="info__descc">
-                                <div className="desssss">
-                                  <p>Email:</p>
-                                </div>
-                              </div>
-
-                              <div className="info__main">
-                                <div className="inff_mainnnn_tess">
-                                  <p>
-                                    <a href="mailto:archergorden@gmail.com">archergorden@gmail.com
-                                      </a>
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div className="info_dev_">
-                              <div className="info__icon">
-                                <div className="i">
-                                  <i className="bi bi-arrow-right-circle"></i>
-                                </div>
-                              </div>
-
-                              <div className="info__descc">
-                                <div className="desssss">
-                                  <p>Freelance:</p>
-                                </div>
-                              </div>
-
-                              <div className="info__main">
-                                <div className="inff_mainnnn_tess">
-                                  <p>Available</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div>
-                        <div className="few_desc">
-                          <span>I&apos;m a passionate and dedicated Full-Stack Developer, based in Accra. I bring a strong blend of frontend and backend skills to the table. I strive to deliver high-quality work. </span>
-                        </div>
+                      <div className='last-abb'>
+                        <span>
+                        Unlike many might think, coding is more than just logic and syntax—it’s an art. The world of programming, like the ancient world of classical literature, has deep roots in history. Over the years, it has evolved into the backbone of modern innovation. My journey as a developer involves continuous learning and a commitment to improving the digital landscape for users worldwide.
+                        </span>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div className="dev_skils" style={{marginTop:'80px'}}>
-              <div className="dev_skills">
-                <div className="skills_head">
-                  <div className="head_skil">
-                    <h1>Skills</h1>
-                  </div>
-
-                  <div className="skil_head_desac">
-                    <span></span>
-                  </div>
-                </div>
-
-                <div className="main_skills">
-                  <div className="skills_wrapper">
-                    <div className="skills_grid">
-                      <div className="col">
-                        <div className="language__">
-                          <div className="language_text">
-                            <h4>Html</h4>
-                          </div>
-
-                          <div className="lamguage_percent">
-                            <div className="p">100%</div>
-                          </div>
-                        </div>
-
-                        <div className="language_bar">
-                          <div className="lan_bar"></div>
-                        </div>
-                      </div>
-                      <div className="col">
-                        <div className="language__">
-                          <div className="language_text">
-                            <h4>css</h4>
-                          </div>
-
-                          <div className="lamguage_percent">
-                            <div className="p">85%</div>
-                          </div>
-                        </div>
-
-                        <div className="language_bar css">
-                          <div className="lan_bar"></div>
-                        </div>
-                      </div>
-                      <div className="col">
-                        <div className="language__">
-                          <div className="language_text">
-                            <h4>javascript</h4>
-                          </div>
-
-                          <div className="lamguage_percent">
-                            <div className="p">70%</div>
-                          </div>
-                        </div>
-
-                        <div className="language_bar js">
-                          <div className="lan_bar"></div>
-                        </div>
-                      </div>
-                      <div className="col">
-                        <div className="language__">
-                          <div className="language_text">
-                            <h4>react</h4>
-                          </div>
-
-                          <div className="lamguage_percent">
-                            <div className="p">85%</div>
-                          </div>
-                        </div>
-
-                        <div className="language_bar rect">
-                          <div className="lan_bar"></div>
-                        </div>
-                      </div>
-                      <div className="col">
-                        <div className="language__">
-                          <div className="language_text">
-                            <h4>django</h4>
-                          </div>
-
-                          <div className="lamguage_percent">
-                            <div className="p">90%</div>
-                          </div>
-                        </div>
-
-                        <div className="language_bar jang">
-                          <div className="lan_bar"></div>
-                        </div>
-                      </div>
-                      <div className="col">
-                        <div className="language__">
-                          <div className="language_text">
-                            <h4>postgres / mongoDB</h4>
-                          </div>
-
-                          <div className="lamguage_percent">
-                            <div className="p">90%</div>
-                          </div>
-                        </div>
-
-                        <div className="language_bar db">
-                          <div className="lan_bar"></div>
-                        </div>
-                      </div>
+                    <div className="get-in">
+                      <button>
+                        <Link to='/contact'>
+                          <p>Get In Touch</p>
+                          <i className='bi bi-envelope'></i>
+                        </Link>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="experience-tab">
+          <div className="ex-tab">
+            <div className="ex-head">
+              <h2>Technologies I&apos;m Familiar with</h2>
+            </div>
+            <div className="exp">
+              {Languages.map((lang, index) => {
+                return <Experience key={index} lang={lang} />
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   )
 }
 
-export default About
+export default About;

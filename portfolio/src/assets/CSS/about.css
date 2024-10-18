@@ -1,136 +1,91 @@
-.about_page, .about_wrapper, .about_header, .develp_desc, .about_what, .devvv,
-.dev_image, .dev_info_what, .dev_what_infom, .lis, .left_side, .dev_skils,
-.dev_skills, .main_skills, .skills_grid, .col, .language_bar, .lan_bar{
+.experience-tab, .ex-tab, .exp, .ex-container, .act-ex{
     width: 100%;
     height: 100%;
 }
 
-.about_loud, .skil_head_desac{
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-align: left;
-    position: relative;
-    margin-bottom: 20px;
-    color: hsl(240, 62%, 72%);
-}
-
-.about_descript{
-    margin: 40px auto;
-    text-align: left;
-}
-
-.about_what{
-    margin-top: 40px;
-}
-
-.devvv, .lis, .info_dev_, .language__{
+.about_do{
+    font-size: 2.7rem;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    gap: 10px;
+    font-weight: 800;
+    margin-bottom: 20px;
 }
 
-.info_dev_, .devvv{
-    align-items: center;
-}
-
-.image{
-    width: 280px;
-    height: 100%;
-    position: relative;
-}
-
-.image img{
-    width: 100%;
-    height: 100%;
-}
-
-.langua_do, .head_skil{
-    font-size: 1.5rem;
-    text-align: left;
-    color: hsl(240, 62%, 72%);
-}
-
-.dev_what_infom, .left_side, .right_side, .dev_skills, .skills_head,
-.col{
+.waht_dev_do{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: start;
+    gap: 30px;
 }
 
-.dev_what_infom{
-    gap: 40px;
+.waht_dev_do{
+    padding: 19px 10px;
 }
 
-.i .bi{
-    font-size: 1.6rem;
-}
-
-.skills_grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.skills_wrapper{
+.dev_image{
     padding: 30px;
 }
 
-.language__{
-    justify-content: space-between;
+.get-in{
+    padding-right: 40px;
 }
 
-.language_text{
-    color: hsl(240, 62%, 72%);
+.get-in button{
+    background: hsl(240, 62%, 72%);
+    color: hsl(0, 0%, 100%);
+    height: 45px;
+    transition: .3s ease;
+}
+
+.get-in a{
+    color: hsl(0, 0%, 100%);
     font-size: 1rem;
-    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.language_bar{
-    position: relative;
+.get-in button:hover{
+    background: transparent;
+    border: 1px solid hsl(240, 62%, 72%);
 }
 
-.lan_bar{
-    position: relative;
-    background: hsl(0, 0%, 100%);
-    height: 5px;
+.experience-tab{
+    background: hsl(240, 5%, 7%);
+    border-radius: 13px;
+    margin: 40px 0;
+    padding: 30px 0;
 }
 
-.lan_bar::after{
-    content: '';
-    position: absolute;
-    background: hsl(240, 62%, 72%);
-    width: 100%;
-    height: 5px;
+.exp{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
-.js .lan_bar::after{
-    content: '';
-    position: absolute;
-    background: hsl(240, 62%, 72%);
-    width: 70%;
-    height: 5px;
+.ex-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.jang .lan_bar::after{
-    content: '';
-    position: absolute;
-    background: hsl(240, 62%, 72%);
-    width: 90%;
-    height: 5px;
+.ex-head h2{
+    padding: 10px;
+    text-align: center;
 }
 
-.rect .lan_bar::after, .css .lan_bar::after{
-    content: '';
-    position: absolute;
-    background: hsl(240, 62%, 72%);
-    width: 85%;
-    height: 5px;
+.ex-img i{
+    color: hsl(240, 62%, 72%);
+    font-size: 1.3rem;
 }
 
-.db .lan_bar::after{
-    content: '';
-    position: absolute;
-    background: hsl(240, 62%, 72%);
-    width: 90%;
-    height: 5px;
+.act-ex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.act-ex h2{
+    color: hsl(240, 62%, 72%);
 }
