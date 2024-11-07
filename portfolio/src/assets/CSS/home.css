@@ -238,6 +238,12 @@
     margin: 40px 0;
 }
 
+.leFadeIn span { animation-name: leFadeIn }
+@keyframes leFadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
 @media screen and (max-width:786px) {
     .see_dev{
         flex-direction: column;

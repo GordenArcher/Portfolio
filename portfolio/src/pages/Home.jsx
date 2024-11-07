@@ -10,7 +10,6 @@ const Home = () => {
   const [subIndex, setSubIndex] = useState(0);  
   const [isDeleting, setIsDeleting] = useState(false);  
   const [speed, setSpeed] = useState(350); 
-
   useEffect(() => {
     const handleTyping = () => {
       if (!isDeleting && subIndex < roles[index].length) {
@@ -38,7 +37,7 @@ const Home = () => {
         <div className="see_dev">
           <div className="m-pme">
             <div className="dev__">
-              <div className="dev_image">
+              <div className="dev_image animate__animated animate__backInDown">
                 <img src={Dev} alt="developer image" />
               </div>
             </div>
@@ -131,9 +130,12 @@ const Home = () => {
                     </p>
                   </div>
 
+                  <div className='cssanimation leFadeIn sequence'>
                   <span>
                   Full-Stack Developer here, skilled in React, Django, and database management. Experienced in building dynamic interfaces and robust backend systems, with a focus on scalable, maintainable solutions. Passionate about continuous learning and staying current with industry trends.
                   </span>
+                  </div>
+                  
                 </div>
               </div>
 

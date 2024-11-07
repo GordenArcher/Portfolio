@@ -252,6 +252,10 @@
         display: none;
     }
 
+    .mobile-view{
+        display: initial;
+    }
+
     .leave{
         transform: translateX(-100%);
     }
