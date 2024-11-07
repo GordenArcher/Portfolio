@@ -15,21 +15,6 @@ const About = () => {
     "Postgres",
     "MongoDB",
     "Team Collaboration and Fast Learner"
-    // {
-    //   a : "UI/UX Design"
-    // },
-    // {
-    //   b : "React"
-    // },
-    // {
-    //   c : "Django"
-    // },
-    // {
-    //   d : "Postgres"
-    // },
-    // {
-    //   e : "MongoDB"
-    // }
   ]
 
   const roles = useMemo(() => ["Software Developer.", "Fullstack Engineer.", "Frontend Developer.", "Backend Developer."])
@@ -80,7 +65,6 @@ const About = () => {
                   <div className="waht_dev_do">
                     <div className="about_do">
                       <span>I&apos;m a</span>
-                      <span>Gorden Archer</span>
                       <span className="animated-role">
                         {roles[index].substring(0, subIndex)}
                       </span>
@@ -89,7 +73,7 @@ const About = () => {
                     <div style={{display : 'flex', flexDirection :'column', gap : '10px', fontSize: '1.2rem'}}>
                       <div className="labot">
                         <span>
-                          I am an Accra-based fullstack engineer with a focus on web development, software engineering, and user interface design. My expertise spans a diverse range of technologies, and I&apos;ve worked across various industries to deliver both frontend and backend solutions.
+                        Gorden Archer here, I am an Accra-based fullstack engineer with a focus on web development, software engineering, and user interface design. My expertise spans a diverse range of technologies, and I&apos;ve worked across various industries to deliver both frontend and backend solutions.
                         </span>
                       </div>
 

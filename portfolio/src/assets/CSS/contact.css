@@ -1,4 +1,4 @@
-.contact-container, .wrapper, .dev-cont, .touch, .main-form-dev, .cont,
+.contact-container, .wrapper, .touch, .main-form-dev, .cont,
 .left-cont, .right-cont, .right-cont form, .f, .name-email, .name, .email,
 .message, .message textarea{
     width: 100%;
@@ -12,12 +12,10 @@
 }
 
 .dev-cont{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    gap: 50px;
-    flex-direction: column;
     padding: 20px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
 }
 
 .touch{
@@ -63,7 +61,6 @@
 }
 
 .right-cont form{
-    /* padding: 50px; */
     position: relative;
 }
 
@@ -84,7 +81,6 @@
     display: flex;
     align-items: start;
     flex-direction: column;
-    /* gap: 20px; */
 }
 
 .name input, .email input{
@@ -131,4 +127,26 @@ input:focus, textarea:focus{
 .send button:hover{
     background: transparent;
     border: 1px solid hsl(240, 62%, 72%);
+}
+
+@media screen and (max-width:786px) {
+    .cont{
+        flex-direction: column;
+    }
+
+    .touch .big-touch{
+        font-size: 1.5rem;
+    }
+
+    .left-cont, .right-cont{
+        padding: 10px;
+    }
+
+    .left-cont, .right-cont{
+        width: 100%;
+    }
+
+    .name-email{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

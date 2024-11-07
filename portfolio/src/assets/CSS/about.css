@@ -89,3 +89,18 @@
 .act-ex h2{
     color: hsl(240, 62%, 72%);
 }
+
+@media screen and (max-width:786px) {
+    .labot span{
+        font-size: .9rem;
+    }
+
+    .ex-head h2{
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    .exp{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

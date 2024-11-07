@@ -3,6 +3,7 @@ import '../assets/CSS/sidebar.css'
 import { Link } from 'react-router-dom';
 
 const NavHeader = ( ) => {
+    const [mobile, setMobile] = useState(false)
 
     const [iconFill, setIconFill] = useState(Array(6).fill(false));
 
@@ -23,7 +24,7 @@ const NavHeader = ( ) => {
                         </div>
                     </div>
 
-                    <div className="links">
+                    <div className={mobile ?  `links` : `links leave`}>
                         <ul>
                             <li onMouseEnter={() => linkIcon(0)} onMouseLeave={() => linkIcon(0)}>
                                 <Link to='/'>
@@ -97,6 +98,12 @@ const NavHeader = ( ) => {
                             <Link to='/service'>
                                 Hire me
                             </Link>
+                        </button>
+                    </div>
+
+                    <div className="mobile-view">
+                        <button onClick={() => setMobile((currentState) => !currentState)}>
+                            <i className='bi bi-list'></i>
                         </button>
                     </div>
                 </div>

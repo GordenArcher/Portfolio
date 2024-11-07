@@ -2,7 +2,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import NotFound from './pages/404'
 import Portfolio from './pages/Portfolio'
 import NavHeader from './layout/NavHeader'
@@ -56,7 +56,7 @@ function App() {
           <div className="footer">
             <footer>
               <div className="left">
-                <span> copyright &copy; 2024 <a href="#!">G-KANAD, </a> All Rights Reserved. </span>
+                <span> copyright &copy; 2024 <Link to="/">G-KANAD</Link> All Rights Reserved. </span>
               </div>
 
               <div className="right">

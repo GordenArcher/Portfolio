@@ -159,8 +159,8 @@ const Home = () => {
               <div className="resume_header">
                 <div className="head_main">
                   <div className="resccc">
-                      <h2>Resume</h2>
-                      <div className="head_line"></div>
+                    <h2>Resume</h2>
+                    <div className="head_line"></div>
                   </div>
                 </div>
 

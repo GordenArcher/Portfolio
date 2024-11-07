@@ -28,7 +28,6 @@
     gap: 30px;
     background: #121214;
     border-radius: 13px;
-    padding: 20px;
     align-items: center;
 }
 
@@ -45,7 +44,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-
+    
 }
 
 .dev_name{
@@ -70,11 +69,14 @@
     font-size: 2rem;
 }
 
+.iam{
+    padding: 20px;
+}
+
 .dev_wat{
     width: 100%;
     background: hsl(240, 5%, 7%);
     border-radius: 13px;
-    padding: 20px;
 }
 
 .smess {
@@ -128,7 +130,7 @@
     border-radius: 13px;
 }
 
-.resume_wrapper, .resume_app, .resume_container, .resume_header, .main_resume_cntainer,
+.resume_wrapper, .resume_container, .resume_header, .main_resume_cntainer,
 .main_resume, .resume_grid, .summery, .zxcv, .summm, .main_sum, .education_content,
 .edu_ccate, .education_main, .edu_wrapp, .resume_right, .resume_wrapp_right, .head_main{
     width: 100%;
@@ -136,7 +138,7 @@
 }
 
 .resume_app{
-    padding: 20px;
+    padding: 50px;
 }
 
 .resume_container, .summery, .main_sum, .msum_ldes ul, .edu_ccate, .edu_wrapp,
@@ -234,4 +236,46 @@
 
 .education_content{
     margin: 40px 0;
+}
+
+@media screen and (max-width:786px) {
+    .see_dev{
+        flex-direction: column;
+    }
+
+    .m-pme{
+        width: 100%;
+    }
+
+    .dev_name h2{
+        font-size: 1.2rem;
+    }
+
+    .waht_dev_do span{
+        font-size: 1.2rem;
+    }
+
+    .dev_do{
+        font-size: 1.4rem;
+    }
+
+    .resume_grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sum_head, .msum_h, .edu_head{
+        font-size: 1.4rem;
+    }
+
+    .edu_prog_name h3, .right_head{
+        font-size: 1.2rem;
+    }
+
+    .actt_namee{
+        font-size: 1rem;
+    }
+
+    .lit_des{
+        font-size: .9rem;
+    }
 }

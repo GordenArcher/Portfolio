@@ -73,3 +73,21 @@
     color: hsl(0, 0%, 80%);
     font-size: 1rem;
 }
+
+@media screen and (max-width:786px) {
+    .portfolio_index{
+        padding: 20px;
+    }
+
+    .port_header, .port_head_main{
+        font-size: 1.2rem;
+    }
+
+    .head_desc{
+        font-size: .9rem;
+    }
+
+    .projects_grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
