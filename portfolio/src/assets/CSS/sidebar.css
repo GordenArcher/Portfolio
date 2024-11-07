@@ -25,6 +25,7 @@
 }
 
 .links{
+    position: relative;
     transition: all .3s ease;
 }
 
@@ -71,6 +72,10 @@
     transition: .3s ease;
 }
 
+.mobile-view{
+    display: none;
+}
+
 .mobile-view button{
     background: hsl(240, 62%, 72%);
     color: hsl(0, 0%, 100%);
@@ -89,10 +94,6 @@
 .hire-me button:hover, .mobile-view button:hover{
     background: transparent;
     border: 1px solid hsl(240, 62%, 72%);
-}
-
-.leave{
-    transform: translateX(-100%);
 }
 
 .engineerrrr{
@@ -249,5 +250,9 @@
 
     .hire-me{
         display: none;
+    }
+
+    .leave{
+        transform: translateX(-100%);
     }
 }
