@@ -74,6 +74,25 @@
     font-size: 1rem;
 }
 
+.mwork{
+    padding: 70px;
+    position: relative;
+}
+
+.more{
+    text-align: center;
+}
+
+.more a button{
+    background: hsl(240, 62%, 72%);
+    transition: .3s ease;
+}
+
+.more button:hover{
+    background: transparent;
+    border: 1px solid hsl(240, 62%, 72%);
+}
+
 @media screen and (max-width:786px) {
     .portfolio_index{
         padding: 20px;

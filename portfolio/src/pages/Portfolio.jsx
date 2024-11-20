@@ -1,8 +1,8 @@
 import '../assets/CSS/portfolio.css'
-import Proj1 from '../assets/images/proj1.jpeg'
+// import Proj1 from '../assets/images/proj1.jpeg''
 import Proj2 from '../assets/images/proj2.jpeg'
-import Proj3 from '../assets/images/proj3.jpeg'
-import Proj4 from '../assets/images/proj4.jpeg'
+import Proj3 from '../assets/images/over.jpeg'
+// import Proj4 from '../assets/images/proj4.jpeg'
 import Proj5 from '../assets/images/proj5.jpeg'
 import Proj6 from '../assets/images/proj6.jpeg'
 
@@ -36,7 +36,7 @@ const Portfolio = () => {
                                             <div className="project_content">
                                                 <div className="projecct_overview">
                                                     <a href="http://semester-project-six.vercel.app" target="_blank" rel="noopener noreferrer">
-                                                        <div className="proj_img">
+                                                        <div className="proj_img cs">
                                                             <img src={Proj2} alt="project image" />
                                                         </div>
                                                     </a>
@@ -45,37 +45,19 @@ const Portfolio = () => {
                                                 <div className="project_context">
                                                     <div className="frame_work">
                                                         <div className="fram_used">
-                                                            <h2>Semeter project</h2>
+                                                            <h2>Semeter Project</h2>
+                                                            <p>This project was a semeter project in school, where the proffessor highlited that we create a sports academy website for the src board</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div className="projects">
                                             <div className="project_content">
                                                 <div className="projecct_overview">
-                                                    <a href="http://willod-multimedia.vercel.app" target="_blank" rel="noopener noreferrer">
-                                                        <div className="proj_img">
-                                                            <img src={Proj1} alt="project image" />
-                                                        </div>
-                                                    </a>
-                                                </div>
-
-                                                <div className="project_context">
-                                                    <div className="frame_work">
-                                                        <div className="fram_used">
-                                                            <h2>Willod Multimedia</h2>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="projects">
-                                            <div className="project_content">
-                                                <div className="projecct_overview">
-                                                    <a href="https://assignment-2-swart-pi.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://recuerdo.vercel.app/" target="_blank" rel="noopener noreferrer">
                                                         <div className="proj_img">
                                                             <img src={Proj3} alt="project image" />
                                                         </div>
@@ -85,14 +67,15 @@ const Portfolio = () => {
                                                 <div className="project_context">
                                                     <div className="frame_work">
                                                         <div className="fram_used">
-                                                            <h2>Assignment 2</h2>
+                                                            <h2>Memory Application</h2>
+                                                            <p>It&apos;s an application that allow users to upload their memory or media that are unique to them</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="projects">
+                                        {/* <div className="projects">
                                             <div className="project_content">
                                                 <div className="projecct_overview">
                                                     <a href="https://assignment-4-gold.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -111,7 +94,7 @@ const Portfolio = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className="projects">
                                             <div className="project_content">
                                                 <div className="projecct_overview">
@@ -126,6 +109,7 @@ const Portfolio = () => {
                                                     <div className="frame_work">
                                                         <div className="fram_used">
                                                             <h2>Currency Exchange</h2>
+                                                            <p>This is also a currency exchange application that allow users to enter any amount to be exchanged in the selected currency</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -145,6 +129,7 @@ const Portfolio = () => {
                                                     <div className="frame_work">
                                                         <div className="fram_used">
                                                             <h2>Todo List</h2>
+                                                            <p>This is a Todo List, it allows users to enter their todo for the day or days to come so that they won&apos;t forget </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -152,6 +137,14 @@ const Portfolio = () => {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div className='mwork'>
+                            <div className="more">
+                                <a href="https://github.com/GordenArcher">
+                                    <button>View More</button>
+                                </a>
                             </div>
                         </div>
                     </div>
