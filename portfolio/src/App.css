@@ -86,8 +86,7 @@
 }
 
 .dev_wat, .m-pme, .resume_wrapper, .resume_right, .kick-start,
-.experience-tab, .services-app, .top-box, .projects, .por_projects, .main-form-dev,
-.left-cont, .right-cont{
+.experience-tab, .services-app, .top-box, .projects, .por_projects{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;

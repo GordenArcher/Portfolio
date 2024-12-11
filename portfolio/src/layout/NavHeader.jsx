@@ -95,7 +95,7 @@ const NavHeader = ( ) => {
 
                     <div className="hire-me">
                         <button>
-                            <Link to='/service'>
+                            <Link to='/contact'>
                                 Hire me
                             </Link>
                         </button>

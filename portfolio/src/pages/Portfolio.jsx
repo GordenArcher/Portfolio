@@ -1,5 +1,5 @@
 import '../assets/CSS/portfolio.css'
-// import Proj1 from '../assets/images/proj1.jpeg''
+import Proj1 from '../assets/images/rdr.jpeg'
 import Proj2 from '../assets/images/proj2.jpeg'
 import Proj3 from '../assets/images/over.jpeg'
 // import Proj4 from '../assets/images/proj4.jpeg'
@@ -37,7 +37,7 @@ const Portfolio = () => {
                                                 <div className="projecct_overview">
                                                     <a href="http://semester-project-six.vercel.app" target="_blank" rel="noopener noreferrer">
                                                         <div className="proj_img cs">
-                                                            <img src={Proj2} alt="project image" />
+                                                            <img src={Proj1} alt="project image" />
                                                         </div>
                                                     </a>
                                                 </div>
@@ -45,8 +45,8 @@ const Portfolio = () => {
                                                 <div className="project_context">
                                                     <div className="frame_work">
                                                         <div className="fram_used">
-                                                            <h2>Semeter Project</h2>
-                                                            <p>This project was a semeter project in school, where the proffessor highlited that we create a sports academy website for the src board</p>
+                                                            <h2>Connectify</h2>
+                                                            <p>Connectify is a social media platform where users can send friend requests, chat with friends in real-time, and engage with posts by liking and commenting. Built with Django and javascript, it offers a smooth and interactive experience with real-time notifications for messages, friend requests, and post interactions.</p>
                                                         </div>
 
                                                     </div>
@@ -135,6 +135,29 @@ const Portfolio = () => {
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div className="projects">
+                                            <div className="project_content">
+                                                <div className="projecct_overview">
+                                                    <a href="http://semester-project-six.vercel.app" target="_blank" rel="noopener noreferrer">
+                                                        <div className="proj_img cs">
+                                                            <img src={Proj2} alt="project image" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                                <div className="project_context">
+                                                    <div className="frame_work">
+                                                        <div className="fram_used">
+                                                            <h2>Semeter Project</h2>
+                                                            <p>This project was a semeter project in school, where the proffessor highlited that we create a sports academy website for the src board</p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
